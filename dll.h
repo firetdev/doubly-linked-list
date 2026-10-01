@@ -56,6 +56,7 @@ List* create_list_by_value(int v) {
 
 	if (head == NULL) {
 		perror("Failed to create initial node");
+		free(new_list);
 		return NULL;
 	}
 
